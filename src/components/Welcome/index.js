@@ -6,7 +6,7 @@ class Welcome extends Component {
   state = {isSubscribed: true}
 
   onSubscribe = () => {
-    this.prevState(prevState => ({isSubscribed: !prevState.isSubscribed}))
+    this.setState(prevState => ({isSubscribed: !prevState.isSubscribed}))
   }
 
   getButtonText = () => {
